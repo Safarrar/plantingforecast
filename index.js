@@ -3,7 +3,7 @@ import axios from "axios";
 
 // Create a new express application instance
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // Serve static files from the 'public' folder
 app.use(express.static("public"));
