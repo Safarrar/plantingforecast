@@ -52,7 +52,7 @@
                 align-items: center;
                 flex-direction: column;
                 display: flex;
-                min-width: 650px;
+                min-width: 400px;
             }
             .green {
                 color: green;
@@ -79,6 +79,14 @@
                 border: none;
                 border-radius: 4px;
                 cursor: pointer;
+            }
+
+            @media(max-width: 500px) {
+                .flex-card {
+                    form label {
+                        display: block;
+                    }
+                }
             }
         </style>
     </head>
